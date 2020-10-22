@@ -19,6 +19,6 @@ module.exports.compose = function (middlewares = []) {
       next = createNext(middlewares[i], next);
     }
 
-    return await next();
+    return await next(11);
   };
 };
